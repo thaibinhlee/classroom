@@ -1,0 +1,9 @@
+Array
+(
+    [filepath] => ./upload/bg_6.jpg
+    [filename] => bg_6.jpg
+)
+<br />
+<b>Warning</b>:  filesize(): stat failed for uploads/bg_6.jpg in <b>C:\xampp\htdocs\classroom\download.php</b> on line <b>17</b><br />
+<br />
+<b>Warning</b>:  readfile(uploads/bg_6.jpg): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\classroom\download.php</b> on line <b>18</b><br />

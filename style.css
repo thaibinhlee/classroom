@@ -1,0 +1,2811 @@
+/* File Entercode*/
+body:not(#login_body) {
+    background-image: url("./image/BG-pattern.png");
+    background-repeat: repeat;
+}
+
+.div_flex{
+    display: flex;
+}
+.cmt{
+    display: flex;
+    justify-content: space-between;
+}
+.EntercodeClose {
+    margin-left: 20px;
+    outline: none;
+    background-color: white;
+    border: none;
+    height: 3rem;
+    width: 3rem;
+    font-size: 25px;
+    color: #848484;
+}
+
+.EntercodeClose:hover {
+    outline: none;
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 50%;
+}
+
+.EntercodeClose:focus {
+    outline: none;
+}
+
+.EntercodeJoinclass {
+    margin-left: 20px;
+    font-size: 25px;
+    color: #848484;
+}
+
+.EntercodeJoin {
+    float: right;
+    margin-right: 20px;
+    width: 80px;
+    background-color: #5882FA;
+    color: white;
+    height: 38px;
+    border: 1px solid #5882FA;
+    border-radius: 10%;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.EntercodeJoin:hover {
+    box-shadow: 2px 2px 2px #D8D8D8;
+    background-color: #2E64FE;
+}
+
+.EntercodeDiv1 {
+    width: 600px;
+    border: 1px solid #6E6E6E;
+    border-color: #D8D8D8;
+    border-radius: 10px;
+    height: 130px;
+}
+
+.EntercodeImg {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.EntercodeSwitchaccount {
+    background-color: white;
+    border: 1px solid #BDBDBD;
+    color: #2E64FE;
+    width: 80%;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.EntercodeSwitchaccount:hover {
+    background-color: #E0ECF8;
+}
+
+.EntercodeDiv2 {
+    width: 600px;
+    border: 1px solid #6E6E6E;
+    border-color: #D8D8D8;
+    border-radius: 10px;
+    height: 180px;
+}
+
+.EntercodeClasscode {
+    margin-left: 10px;
+    height: 40px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    outline: none;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+}
+
+.EntercodeClasscode:focus {
+    border: 1.5px solid #2E64FE;
+}
+
+.EntercodeDiv3 {
+    width: 600px;
+}
+
+
+/* File Maininterface 
+/
+/
+/
+/
+/
+/
+/
+/
+/*/
+
+.cell {
+    border: 1px solid #848484;
+    border-radius: 10px;
+    transition: ease-in-out 0.5s;
+}
+
+.cell:hover {
+    box-shadow: 5px 5px 4px #BDBDBD;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media only screen and (min-width: 600px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.wordclassroom {
+    font-size: 25px;
+    color: #585858;
+}
+
+.imagegoogle {
+    max-width: 80px;
+    max-height: 50px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.MainInterfacebuttonmenu {
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.MainInterfacebuttonmenu:hover {
+    cursor: pointer;
+    background-color: #D8D8D8;
+    border-radius: 50%;
+}
+
+.MaininterfaceNavbar {
+    margin-top: 1%;
+    float: left;
+}
+
+.MainInterfacebuttonadd {
+    margin-left: 20px;
+    outline: none;
+    background-color: white;
+    border: none;
+    height: 3rem;
+    width: 3rem;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.maininterfacekhangtrang {
+    height: 100px;
+    clear: both;
+}
+
+.MainInterfacebuttonadd:hover {
+    outline: none;
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 50%;
+}
+
+.MainInterfacebuttonadd:focus {
+    outline: none;
+}
+
+.MainInterfacebuttonimgUser {
+    max-width: 100%;
+    border-radius: 50%;
+    outline: none;
+}
+
+.MainInterfacebuttonUser:focus {
+    outline: none;
+}
+
+.MainInterfaceavatar {
+    position: relative;
+    width: 70px;
+    border-radius: 50%;
+    bottom: 20%;
+    left: 70%;
+}
+
+.maininterfacelist {
+    background-color: white;
+    position: absolute;
+    z-index: 3;
+
+}
+
+.maininterfacemonhoclist {
+    width: auto;
+    align-items: center;
+    border: none;
+    background-color: white;
+}
+
+.maininterfacemonhoclist:focus {
+    outline: none;
+}
+
+.MaininterfaceTenmonhoc {
+    white-space: nowrap;
+    width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 20px;
+}
+
+.maininterfacebt3c {
+    float: right;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    margin-right: 2%;
+    margin-top: 6%;
+    width: 30px;
+}
+
+.maininterfacekhungmh {
+    background-color: black;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.maininterfacethea {
+    color: white;
+}
+
+.maininterfacethea:hover {
+    color: white;
+}
+
+.MaininterfaceTenmonhoc {
+    margin-left: 5%;
+}
+
+.maininterfacenamegv {
+    margin-left: 5%;
+    font-size: 15px;
+    padding-bottom: 10px;
+    white-space: nowrap;
+    width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.interfacendtb {
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.khung {
+    margin-bottom: 20px;
+}
+
+.maininterfaceavtmh {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.maininterfacetenmonlist {
+    white-space: nowrap;
+    width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.maininterfacetengvlist {
+    color: #585858;
+    white-space: nowrap;
+    width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    margin-left: 10px;
+}
+
+
+/* File Stream
+/
+/
+/
+/
+/
+*/
+
+.StreamInforSj {
+    border: 1px solid #0B610B;
+    height: 270px;
+
+    color: #2E2E2E;
+    border-radius: 10px;
+    background-image: url("./image/default.png");
+}
+
+.StreamnameSj {
+    font-size: 40px;
+    margin-left: 3%;
+}
+
+.Streamnamegv {
+    font-size: 20px;
+    margin-left: 3%;
+}
+
+.StreamSharesomething {
+    margin-top: 20px;
+    border: 1px solid black;
+    height: auto;
+    border-radius: 10px;
+}
+
+.Streamimg {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.StreamInputsaysomething {
+    margin-top: 20px;
+    width: 50%;
+    border: none;
+    margin-left: 20px;
+}
+
+
+#Streambutton {
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.StreamComment {
+    width: 70%;
+}
+
+.Streambuttonadd {
+    border: 0.5px solid black;
+    color: green;
+    text-align: center;
+    width: 70px;
+    border-radius: 5px;
+}
+
+.Streambuttoncancel:hover {
+    background-color: #BDBDBD;
+    align-items: right;
+}
+
+.Streambuttoncancel {
+    float: right;
+    text-align: right;
+    border: none;
+    background-color: white;
+    margin-right: 20px;
+}
+
+.Streambaitap {
+    width: 100%;
+    text-align: left;
+    background-color: white;
+    border: 0.5px solid black;
+    margin-top: 20px;
+    border-radius: 15px;
+    display: flex;
+}
+.name_time{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 15px;
+}
+.Streambaitap:focus {
+    outline: none;
+    background-color: #CEF6D8;
+}
+
+.Streambuttonpost {
+    text-align: center;
+    float: right;
+    border-radius: 5px;
+}
+
+.Streamthongbao {
+    margin-top: 20px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.Streamchangepagest {
+    font-weight: 600;
+    margin-right: 2%;
+    color: green;
+    padding: 19px;
+    border-bottom: 2px solid green;
+}
+
+.Peoplechangepagest:hover {
+    color: #848484;
+    text-decoration: none;
+    background-color: #CEF6CE;
+}
+
+.Peoplechangepagest {
+    font-weight: 600;
+    margin-right: 2%;
+    color: #848484;
+}
+
+
+/* File People
+/
+/
+/
+//
+*/
+
+.Peopleteachersword {
+    font-size: 30px;
+    color: green;
+}
+
+.peoplenumberstd {
+    float: right;
+    color: green;
+    margin-right: 10px;
+}
+
+.peoplehrchinh {
+    color: green;
+    height: 1px;
+    background-color: green;
+}
+
+.people {
+    width: 60%;
+}
+
+.peopleandStream {
+    justify-content: center;
+    position: relative;
+
+}
+
+.Streamchangepage {
+    font-weight: 600;
+    margin-right: 2%;
+    color: #848484;
+}
+
+.Streamchangepage:hover {
+    color: #848484;
+    text-decoration: none;
+    background-color: #CEF6CE;
+}
+
+.Peoplechangepage {
+    font-weight: 600;
+    margin-right: 2%;
+    color: green;
+    padding: 19px;
+    border-bottom: 2px solid green;
+}
+
+.peoplebangnavbar {
+    width: 100%;
+    background-color: white;
+}
+
+.peopletdthu2 {
+    width: 40%;
+    justify-content: left;
+}
+
+.peopletdtenm {
+    color: black;
+    font-size: 20px;
+}
+
+.peopletdtengv {
+    color: black;
+    font-size: 14px;
+}
+
+.peoplebangnavbar {
+    width: 100%;
+}
+
+.peoplebangnavbar td {
+    border-bottom: 1px solid #848484;
+}
+
+.peoplebuttonmenu {
+    width: 5%;
+}
+
+.peopletenmon {
+    width: 40%;
+}
+
+.peoplechochih {
+    width: 40%;
+}
+
+.peoplebuttonavatar {
+    text-align: right;
+}
+
+.peoplethesau {
+    text-align: center;
+    display: none;
+}
+
+.peoplemonhochieth {
+    font-size: 16px;
+    white-space: nowrap;
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 550;
+}
+
+.peoplegvhieth {
+    font-size: 14px;
+}
+
+.peopletenmon a {
+    color: black;
+}
+
+.peopletenmon a:hover {
+    color: #5882FA;
+}
+
+.peoplechustream {
+    font-size: 17px;
+    height: 100%;
+    height: 100%;
+    padding: 18px;
+    color: black;
+}
+
+.peoplechustream:hover {
+    background-color: #E6E6E6;
+    text-decoration: none;
+    color: black;
+}
+
+.peoplechupeople {
+    font-size: 17px;
+    height: 100%;
+    height: 100%;
+    padding: 17px;
+    border-bottom: 3px solid blue;
+    color: #2E64FE;
+}
+
+.peoplechupeople:hover {
+    text-decoration: none;
+
+}
+
+.peoplechustreamsau {
+    font-size: 17px;
+    height: 100%;
+    height: 100%;
+    padding: 18px;
+    color: black;
+}
+
+.peoplechustreamsau:hover {
+    background-color: #E6E6E6;
+    text-decoration: none;
+    color: black;
+}
+
+.peoplechupeoplesau {
+    font-size: 17px;
+    height: 100%;
+    height: 100%;
+    padding: 12px;
+    border-bottom: 3px solid blue;
+    color: #2E64FE;
+}
+
+.peopleallcot {
+    width: 100%;
+}
+
+.bang {
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
+
+.maininterfacemonhoclist1 {
+    width: 100%;
+    border: none;
+    background-color: white;
+}
+
+.maininterfacemonhoclist1:hover {
+    outline: none;
+    background-color: #D8D8D8;
+    border-radius: 0 20px 20px 0;
+}
+
+.maininterfacemonhoclist1:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .peoplechochih {
+        display: none;
+    }
+    .peoplethesau {
+        padding: 10px;
+        display: block;
+    }
+    .peoplebangnavbar td {
+        border-bottom: 0;
+    }
+    .peoplethesau {
+        border-bottom: 1px solid #848484;
+    }
+}
+
+.thanhduoi {
+    width: 75%;
+}
+
+
+/**/
+
+
+/**/
+
+
+/* File Assigment
+/
+/
+/
+*/
+
+.assigmentbang {
+    width: 100%;
+}
+
+.assigmentcot1 {
+    width: 10%;
+}
+
+.assigmentcot2 {
+    width: 90%;
+}
+
+.assigmentcot21 {
+    width: 70%;
+    padding-right: 20px;
+}
+
+.assigmentnopbai {
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px 2px #888888;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+.assigmentcmtprivate {
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px 2px #888888;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.assigmentav1 {
+    position: relative;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 130px;
+}
+
+.assigmenttitle {
+    color: blue;
+    font-size: 30px;
+}
+
+.assigmenttengv {
+    font-size: 15px;
+}
+
+.assigmentdue {
+    float: right;
+    font-weight: 600;
+}
+
+.assigmentinputcmt {
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid rgb(90, 81, 81);
+}
+
+.assigmentinputcmt:focus {
+    outline: none;
+    border: 2px solid #4285F4;
+}
+
+.assigmentturnin {
+    float: right;
+}
+
+.assigmentbtadd {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 0.5px solid #E8EAED;
+    color: blue;
+}
+
+.assigmentbtsm {
+    width: 100%;
+    border: 0.5px solid #E8EAED;
+    background-color: #1967D2;
+    color: white;
+}
+
+.assigmentntpr {
+    width: 60%;
+    border: 0.5px solid #E8EAED;
+    border-radius: 10px;
+}
+
+.assigmentntpr:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .assigmentcot2 table {
+        width: 100%;
+    }
+    .assigmentcot21 {
+        width: 100%;
+    }
+    .assigmentcot22 {
+        width: 100%;
+    }
+    .c {
+        display: block;
+    }
+}
+
+
+/* set anh dai dien */
+
+.Streamimage {
+    width: 40px;
+    height: 40px;
+}
+
+.file_dinhkem {
+    display: block;
+}
+
+.ten_file_kem {
+    margin-right: 20px; margin-left: 20px;
+}
+
+
+/*
+.
+.
+.*/
+
+
+/* File Luồng */
+
+.Luonginformh {
+    border: 1px solid #424242;
+    border-radius: 10px;
+    padding: 20px;
+    height: 230px;
+    color: white;
+    background-color: black;
+}
+
+.Luongmonhoc {
+    font-size: 30px;
+}
+
+.Luongphanmon {
+    font-size: 25px;
+}
+
+.Luongkey {
+    float: left;
+}
+
+.Luongmalop {
+    float: left;
+    margin-right: 10px;
+}
+
+.LuongShare {
+    border: 0.5px solid #A4A4A4;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.LuongThongbao {
+    border: 0.5px solid #A4A4A4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    height: auto;
+}
+
+.avt {
+    float: left;
+    margin-right: 15px;
+}
+
+.Luongnamecmt {
+    float: left;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.Luongntcmt {
+    float: left;
+
+}
+
+.Luongd3c {
+    float: right;
+}
+
+.Luongsoluongcmt {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
+.Luongentercmt {
+    border: none;
+    width: 95%;
+    margin-left: 5px;
+}
+
+.Luongentercmt:focus {
+    border: none;
+    outline: none;
+}
+
+.Luongbtsbm {
+    float: right;
+    background-color: white;
+    border: none;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.Luongbtsbm:focus {
+    outline: none;
+}
+
+.Luongthc {
+    background-color: white;
+    border: none;
+    height: 40px;
+    width: 40px;
+}
+
+.Luongthc:hover {
+    border: none;
+    border-radius: 50%;
+    background-color: #E6E6E6;
+}
+
+.Luongthc:focus {
+    outline: none;
+}
+
+.Luongonhapnd {
+    height: 100px;
+    width: 100%;
+    border: none;
+    border-bottom: 1.5px solid black;
+    background-color: #F1F3F4;
+    margin-bottom: 10px;
+}
+
+.Luongonhapnd:focus {
+    outline: none;
+}
+
+.Luongbtthem {
+    float: left;
+    border: 0.5px solid #E8EAED;
+    background-color: white;
+    border-radius: 3px;
+    transition: ease-in-out 0.5s;
+    padding: 5px 20px 5px 20px;
+}
+
+.Luongbtthem:focus {
+    outline: none;
+    background-color: #E6E6E6;
+}
+
+.Luongbthuy {
+    float: right;
+    border: none;
+    background-color: white;
+    margin-right: 10px;
+    padding: 5px 20px 5px 20px;
+}
+
+.Luongbthuy:hover {
+    border-radius: 2px;
+    background-color: #E6E6E6;
+}
+
+.Luongbthuy:focus {
+    border-radius: 2px;
+    background-color: #BDBDBD;
+    outline: none;
+}
+
+.luongbtdang {
+    float: right;
+    background-color: #323235;
+    border-radius: 3px;
+    color: white;
+    border: none;
+    padding: 5px 20px 5px 20px;
+}
+
+.luongbtdang:hover {
+    background-color: #4d4d52;
+}
+
+.luongbtdang:focus {
+    outline: none;
+}
+
+.Luongaskd {
+    float: left;
+}
+
+.Luongnoivoil {
+    float: left;
+    width: 90%;
+    border: none;
+    background-color: white;
+    margin-left: 20px;
+}
+
+.Luongnoivoil:focus {
+    outline: none;
+}
+
+.Luonghtdong {
+    display: none;
+    padding-bottom: 40px;
+}
+
+.Luonghtmo {
+    padding-bottom: 20px;
+}
+
+
+/*
+/
+/
+*/
+
+
+/*File Moi nguoi */
+
+.Moinguoigiaovien {
+    margin-bottom: 50px;
+}
+
+.Moinguoimain {
+    width: 60%;
+}
+
+.Moinguoibtadd {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mnbtadd {
+    border: none;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    color: #1967D2;
+}
+
+.mnbtadd:hover {
+    border-radius: 50%;
+    background-color: #dfd9d9;
+}
+
+.mnbtadd:focus {
+    outline: none;
+}
+
+.MoinguoiWGV {
+    float: left;
+    color: #1967D2;
+    font-size: 35px;
+}
+
+.thehr {
+    clear: both;
+    color: #1967D2;
+}
+
+.Moinguoilistgv {
+    clear: both;
+}
+
+.MOinguoisoluongsv {
+    float: right;
+    font-size: 15px;
+    margin-right: 20px;
+    margin-top: 8px;
+    color: #1967D2;
+}
+
+.Moinguoiemptyhs {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.imglhempty {}
+
+.Moinguoibtmoi {
+    background-color: #1967D2;
+    color: white;
+    border: none;
+    padding: 3px 17px 3px 17px;
+    border-radius: 5px;
+}
+
+.Moinguoibtmoi:hover {
+    background-color: #6b98d8;
+}
+
+.Moinguoibtmoi:focus {
+    outline: none;
+}
+
+.Moinguoiocb {
+    float: left;
+    margin-right: 20px;
+    margin-top: 12px;
+}
+.mg-top-10{
+    margin-top:10px;
+}
+.padding-left-10{
+    padding-left: 10px;
+}
+.padding-left-30{
+    padding-left: 50px;
+}
+
+/*
+File Bai tap
+/
+/
+/
+/
+*/
+.Baitapthanhotr{
+    padding: 10px 20px 20px 10px;
+
+}
+.Baitapbuttonthoat{
+    float: left;
+    height: 35px;
+    width: 35px;
+    border: none;
+    background-color: white;
+    margin-bottom: 20px;
+}
+.baitapkbt{
+    float: left;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.Baitapbuttonthoat:hover{
+    border-radius: 50%;
+    background-color: #FAFAFA;
+}
+.Baitapbuttonthoat:focus{
+    outline: none;
+}
+.Baitapdaluugiaobai{
+    float: right;
+}
+.Moinguoigiaobai{
+    margin-top: -4px;
+    margin-left: 20px;
+    float: right;
+    margin-right: 20px;
+    color: white;
+    background-color: #2E2E2E;
+    border: none;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+}
+
+.Moinguoigiaobai:hover{
+    background-color: #585858;
+}
+.Moinguoigiaobai:focus{
+    outline: none;
+}
+.Baitapiconlist{
+    float: left;
+    height: 10px;
+    width: 10px;
+}
+.Baitapiptt{
+    margin-left: 20px;
+    width: 95%;
+    border: none;
+    background-color: #FAFAFA;
+    border-bottom: 1px solid black;
+    height: 40px;
+}
+.Baitapphanhd{
+    margin-top: 30px;
+}
+.Baitapiptt:hover{
+    background-color: #F2F2F2;
+}
+.Baitapiptt:focus{
+    outline: none;
+    background-color: #F2F2F2;
+    border-bottom: 2px solid black;
+}
+.Baitapiphd{
+    margin-left: 20px;
+    width: 95%;
+    border: none;
+    background-color: #FAFAFA;
+    border-bottom: 1px solid black;
+    height: 120px;
+}
+.Baitapiphd:hover{
+    background-color: #F2F2F2;
+}
+
+.Baitapiphd:focus{
+    outline: none;
+    background-color: #F2F2F2;
+    border-bottom: 2px solid black;
+}
+.khoangbd{
+    margin-top: 30px;
+}
+.Baitapiphd::-webkit-input-placeholder {
+    font-size: 20px;
+}
+.Baitapbtthem{
+    margin-left: 28px;
+    background-color: white;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+
+}
+.Baitapbtthem:hover{
+    background-color: #FAFAFA;
+}
+.Baitapbtthem:focus{
+    outline: none;
+}
+
+.Baitapbttao{
+    padding: 2px 10px 2px 10px;
+    margin-left: 20px;
+    background-color: white;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+
+}
+.Baitapbttao:hover{
+    background-color: #FAFAFA;
+}
+.Baitapbttao:focus{
+    outline:none;
+}
+.dropdown-menu i{
+    margin: 0;
+    margin-right: 5px;
+}
+
+
+option[disabled] {
+    display: none;
+}
+.abcde{
+    height: 50px;
+}
+.Baitapdiem{
+    width: 100%;
+}
+.Baitapdeadline{
+    width: 100%;
+}
+.Baitapbentrai input{
+    border: none;
+    background-color: #F2F2F2;
+    height: 35px;
+}
+.Baitapbentrai input:hover{
+    background-color: #E6E6E6;
+}
+.baitapdanhcho select{
+    border: none;
+    background-color: #F2F2F2;
+    height: 35px;
+    width: 40%;
+}
+/*
+/
+/
+/
+/
+/
+File Gmail*/
+.gmailtt{
+    padding: 20px;
+    text-align: center;
+    background-color: #58ACFA;
+    color: white;
+    height: 100px;
+    margin-bottom: 50px;
+}
+@media only screen and (max-width: 900px) {
+
+    .baitapdanhcho select{
+        margin-top: 20px;
+        width: 90%;
+    }
+    .Baitapbenphai{
+        margin-top: 50px;
+    }
+}
+
+
+.assigmentthe1 {
+    float: left;
+    width: 5%;
+}
+
+.assigmenticonlist {
+    background-color: #4285F4;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.assigmenticonlist i {
+    margin-left: 20%;
+}
+
+.assigmentnoidungbt {
+    font-size: 30px;
+    color: #1967D2;
+}
+
+.assigmentogiua {
+    width: 60%;
+    float: left;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.assigmentggigi {
+    color: #80868B;
+    font-size: 18px;
+}
+
+.assigmentdiem {
+    float: left;
+    font-size: 19px;
+}
+
+.assigmentdeadline {
+    float: right;
+}
+
+.assigmentnoidughd {
+    clear: both;
+    width: 100%
+}
+
+.thehrxanh {
+    clear: both;
+    height: 1px;
+    background-color: #1967D2;
+}
+
+.thehran {
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .thehran {
+        display: block;
+    }
+    .assigmentthecuoi {
+        clear: both;
+        margin-top: 50px;
+        margin-left: 30px;
+        width: 90%;
+    }
+    .assigmentogiua {
+        width: 80%;
+    }
+}
+
+.assigmentanhcmt {
+    float: left;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.assigmentonhapcmt {
+    width: 85%;
+    border: 1px solid #E0E0E0;
+    float: left;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.assigmentonhapcmt:focus-within {
+    border: 2px solid #1967D2;
+}
+
+.assigmentoinput {
+    width: 90%;
+    border: none;
+    outline: none;
+}
+
+.assigmentbtgui {
+    width: 5%;
+    background-color: white;
+    border: none;
+    outline: none;
+}
+
+.assigmentbtgui:focus {
+    outline: none;
+}
+
+.assigmentthecuoi {
+    float: left;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149);
+}
+
+.assigmentassigment {
+    color: #487D32;
+    float: right;
+}
+
+.assigmentbtadd {
+    width: 100%;
+    border: 1px solid #dddada;
+    background-color: white;
+    color: #1967D3;
+    margin: 20px 0 20px 0;
+    outline: none;
+    border-radius: 5px;
+}
+
+.assigmentbtadd:hover {
+    background-color: rgb(231, 233, 247);
+}
+
+.assigmentbtadd:focus {
+    outline: none;
+}
+
+.assigmentmarkasdone {
+    width: fit-content;
+    color: white;
+    background-color: #1967D3;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.input_file{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.assigmentmarkasdone:hover {
+    background-color: #3d7bd3;
+}
+
+.assigmentmarkasdone:focus {
+    outline: none;
+    background-color: #5e94df;
+}
+
+.assigmentthongtincnt {
+    width: 70%;
+
+}
+
+.assigmenttc {
+    clear: both;
+}
+
+.assigmentbt3c {
+    float: right;
+}
+
+.assigmentndcmt {
+    float: left;
+    width: 80%;
+}
+
+.assigmentnd {
+    clear: both;
+}
+
+.assigmentname {
+
+    margin-right: 20px;
+}
+
+.assigmenttime {
+    float: left;
+    font-size: 20px;
+    color: #848484;
+}
+
+.assigmentbt3cc {
+    border: none;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+}
+
+.assigmentbt3cc:hover {
+    border: none;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(224, 223, 223);
+    border-radius: 50%;
+}
+
+.assigmentbt3cc:focus {
+    outline: none;
+}
+
+.thehrboth {
+    clear: both;
+}
+
+/*gmail*/
+.gmailtt {
+    padding: 20px;
+    text-align: center;
+    background-color: #0080FF;
+    color: white;
+    height: 120px;
+    margin-bottom: 50px;
+}
+
+.gmailimage {
+    width: 60px;
+    height: 45px;
+    background-color: #58ACFA;
+}
+
+.Gmailkhuin {
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FAFAFA;
+}
+
+.Gmailicon i {
+    float: left;
+}
+
+.gmail {
+    width: 50%;
+}
+
+.gmailbtopen {
+    border: none;
+    color: white;
+    background-color: #2E9AFE;
+    border-radius: 3px;
+    padding: 5px 20px 5px 20px;
+}
+
+.gmailbtopen:hover {
+    background-color: #81BEF7;
+}
+
+.Gmailicon {
+    font-size: 30px;
+;
+}
+
+.gmailnoidung {
+    font-size: 25px;
+}
+
+.gmailcontent {
+    margin-left: 40px;
+    background-color: #2E9AFE;
+}
+
+.gmailunsb {
+    clear: both;
+    font-size: 18px;
+}
+
+.gmailimdgg {
+    width: 80px;
+    height: 40px;
+}
+
+.gmailcuoi {
+    text-align: center;
+    color: #A4A4A4;
+}
+
+/*
+File Bai tap
+/
+/
+/
+/
+*/
+
+.Baitapthanhotr {
+    padding: 10px 20px 20px 10px;
+}
+
+.Baitapbuttonthoat {
+    float: left;
+    height: 35px;
+    width: 35px;
+    border: none;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.baitapkbt {
+    float: left;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.Baitapbuttonthoat:hover {
+    border-radius: 50%;
+    background-color: #FAFAFA;
+}
+
+.Baitapbuttonthoat:focus {
+    outline: none;
+}
+
+.Baitapdaluugiaobai {
+    float: right;
+}
+
+.Moinguoigiaobai:hover {
+    background-color: #585858;
+}
+
+.Moinguoigiaobai:focus {
+    outline: none;
+}
+
+.Baitapiconlist {
+    float: left;
+    height: 10px;
+    width: 10px;
+}
+
+.Baitapiptt {
+    margin-left: 20px;
+    width: 95%;
+    border: none;
+    background-color: #FAFAFA;
+    border-bottom: 1px solid black;
+    height: 40px;
+}
+
+.Baitapphanhd {
+    margin-top: 30px;
+}
+
+.Baitapiptt:hover {
+    background-color: #F2F2F2;
+}
+
+.Baitapiptt:focus {
+    outline: none;
+    background-color: #F2F2F2;
+    border-bottom: 2px solid black;
+}
+
+.Baitapiphd {
+    margin-left: 20px;
+    width: 95%;
+    border: none;
+    background-color: #FAFAFA;
+    border-bottom: 1px solid black;
+    height: 120px;
+}
+
+.Baitapiphd:hover {
+    background-color: #F2F2F2;
+}
+
+.Baitapiphd:focus {
+    outline: none;
+    background-color: #F2F2F2;
+    border-bottom: 2px solid black;
+}
+
+.khoangbd {
+    margin-top: 30px;
+}
+
+.Baitapiphd::-webkit-input-placeholder {
+    font-size: 20px;
+}
+
+.Baitapbtthem {
+    margin-left: 28px;
+    background-color: white;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+
+.Baitapbtthem:hover {
+    background-color: #FAFAFA;
+}
+
+.Baitapbtthem:focus {
+    outline: none;
+}
+
+.Baitapbttao {
+    padding: 2px 10px 2px 10px;
+    margin-left: 20px;
+    background-color: white;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+
+.Baitapbttao:hover {
+    background-color: #FAFAFA;
+}
+
+.Baitapbttao:focus {
+    outline: none;
+}
+
+.dropdown-menu i {
+    margin: 0;
+    margin-right: 5px;
+}
+
+option[disabled] {
+    display: none;
+}
+
+.abcde {
+    height: 50px;
+}
+
+.Baitapdiem {
+    width: 100%;
+}
+
+.Baitapdeadline {
+    width: 100%;
+}
+
+.Baitapbentrai input {
+    border: none;
+    background-color: #F2F2F2;
+    height: 35px;
+}
+
+.Baitapbentrai input:hover {
+    background-color: #E6E6E6;
+}
+
+.baitapdanhcho select {
+    border: none;
+    background-color: #F2F2F2;
+    height: 35px;
+    width: 40%;
+}
+
+@media only screen and (max-width: 900px) {
+    .baitapdanhcho select {
+        margin-top: 20px;
+        width: 90%;
+    }
+    .Baitapbenphai {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .baitapdanhcho select {
+        margin-top: 20px;
+        width: 90%;
+    }
+    .Baitapbenphai {
+        margin-top: 50px;
+    }
+}
+
+
+/*
+/
+/
+/
+/
+/
+File Gmail*/
+
+.gmailtt {
+    padding: 20px;
+    text-align: center;
+    background-color: #0080FF;
+    color: white;
+    height: 120px;
+    margin-bottom: 50px;
+}
+
+.gmailimage {
+    width: 60px;
+    height: 45px;
+    background-color: #58ACFA;
+}
+
+.Gmailkhuin {
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FAFAFA;
+}
+
+.Gmailicon i {
+    float: left;
+}
+
+.gmail {
+    width: 50%;
+}
+
+.gmailbtopen {
+    border: none;
+    color: white;
+    background-color: #2E9AFE;
+    border-radius: 3px;
+    padding: 5px 20px 5px 20px;
+}
+
+.gmailbtopen:hover {
+    background-color: #81BEF7;
+}
+
+.Gmailicon {
+    font-size: 30px;
+;
+}
+
+.gmailnoidung {
+    font-size: 25px;
+}
+
+
+
+.gmailunsb {
+    clear: both;
+    font-size: 18px;
+}
+
+.gmailimdgg {
+    width: 80px;
+    height: 40px;
+}
+
+.gmailcuoi {
+    text-align: center;
+    color: #A4A4A4;
+}
+
+
+/*
+File Assigment
+/
+/
+/
+*/
+
+.assigmentthe1 {
+    float: left;
+    width: 5%;
+}
+
+.assigmenticonlist {
+    background-color: #4285F4;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.assigmenticonlist i {
+    margin-left: 20%;
+}
+
+.assigmentnoidungbt {
+    font-size: 30px;
+    color: #1967D2;
+}
+
+.assigmentogiua {
+    width: 60%;
+    float: left;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.assigmentggigi {
+    color: #80868B;
+    font-size: 18px;
+}
+
+.assigmentdiem {
+    float: left;
+    font-size: 19px;
+}
+
+.assigmentdeadline {
+    float: right;
+}
+
+.assigmentnoidughd {
+    clear: both;
+    width: 100%
+}
+
+.thehrxanh {
+    clear: both;
+    height: 1px;
+    background-color: #1967D2;
+}
+
+.thehran {
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .thehran {
+        display: block;
+    }
+    .assigmentthecuoi {
+        clear: both;
+        margin-top: 50px;
+        margin-left: 30px;
+        width: 90%;
+    }
+    .assigmentogiua {
+        width: 80%;
+    }
+}
+
+.assigmentanhcmt {
+    float: left;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.assigmentonhapcmt {
+    width: 85%;
+    border: 1px solid #E0E0E0;
+    float: left;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.assigmentonhapcmt:focus-within {
+    border: 2px solid #1967D2;
+}
+
+.assigmentoinput {
+    width: 90%;
+    border: none;
+    outline: none;
+}
+
+.assigmentbtgui {
+    width: 5%;
+    background-color: white;
+    border: none;
+    outline: none;
+}
+
+.assigmentbtgui:focus {
+    outline: none;
+}
+
+.assigmentthecuoi {
+    float: left;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149);
+}
+
+.assigmentassigment {
+    color: #487D32;
+    float: right;
+}
+
+.assigmentbtadd {
+    width: 100%;
+    border: 1px solid #dddada;
+    background-color: white;
+    color: #1967D3;
+    margin: 20px 0 20px 0;
+    outline: none;
+    border-radius: 5px;
+}
+
+.assigmentbtadd:hover {
+    background-color: rgb(231, 233, 247);
+}
+
+.assigmentbtadd:focus {
+    outline: none;
+}
+
+.assigmentmarkasdone {
+    width: 100%;
+    color: white;
+    background-color: #1967D3;
+    border: none;
+    border-radius: 5px;
+}
+
+.assigmentmarkasdone:hover {
+    background-color: #3d7bd3;
+}
+
+.assigmentmarkasdone:focus {
+    outline: none;
+    background-color: #5e94df;
+}
+
+.assigmentthongtincnt {
+    width: 70%;
+    float: left;
+}
+
+.assigmenttc {
+    clear: both;
+}
+
+.assigmentbt3c {
+    float: right;
+}
+
+.assigmentndcmt {
+
+    width: 80%;
+}
+
+.assigmentnd {
+    clear: both;
+}
+
+.assigmentname {
+    float: left;
+    margin-right: 20px;
+}
+
+.assigmentbt3cc {
+    border: none;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+}
+
+.assigmentbt3cc:hover {
+    border: none;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(224, 223, 223);
+    border-radius: 50%;
+}
+
+.assigmentbt3cc:focus {
+    outline: none;
+}
+
+.thehrboth {
+    clear: both;
+}
+
+
+/*
+Bo sung stream
+*/
+
+.streamtheanh{
+    float: left;
+
+}
+.StreamInputsaysomething {
+    width: 90%;
+}
+
+
+.StreamInputsaysomething:focus {
+    align-items: center;
+    border-bottom: 2px solid #298A08;
+    outline: none;
+    background-color: #F2F2F2;
+}
+.the1{
+    float: left;
+    width: 10%;
+    justify-content: center;
+}
+.the2{
+    float: right;
+    width: 90%;
+}
+#Streambutton{
+    height: 40px;
+    width: 90%;
+    margin-left: 20px       ;
+}
+.Streambuttoncancel:hover {
+    background-color: #BDBDBD;
+    border-radius: 5px;
+}
+.Streambuttoncancel {
+    padding: 5px 15px 5px 15px;
+    margin: 0 15px 0 15px;
+}
+.Streambuttonpost{
+    text-align: center;
+    color: white;
+    padding: 3px 25px 3px 25px;
+    margin: 0 15px 0 15px;
+    background-color: #088A29;
+}
+.Streambuttonpost:hover{
+    background-color: #04B431;
+}
+@media only screen and (max-width: 900px) {
+    .the1{
+        float: left;
+        width: 100%;
+        justify-content: center;
+    }
+    .the2{
+        float:left;
+        text-align: left;
+        width: 100%;
+        margin-top: 20px;
+    }
+    #Streambutton{
+        height: 90px;
+    }
+}
+/*side navigation*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.btn_class{
+    background-color: black;
+    border: solid 1px black;
+    color: white;
+    outline:none;
+}
+.btn_class:hover{
+    background-color: black;
+    border: solid 1px black;
+    color: white;
+    text-decoration: underline;
+    outline:none;
+}
+.element_menu {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/*menu*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    width: max-content;
+
+}
+
+.sidenav a:hover {
+    color: red;
+}
+.sidenav button:hover {
+    background-color: #2E9AFE;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* Style the search field */
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.example{
+    margin: 30px;
+}
+.MainInterfacebuttonimgUser{
+    width: 40px;
+    height: 40px;
+}
+.btnclosesearch{
+    margin-bottom: 30px;
+}
+.Luongosned {
+    border: 1px solid #D8D8D8;
+    border-radius: 10px;
+    height: 38px;
+    margin-left: 50px;
+    width: 90%;
+}
+
+.Luongosned:hover {
+    border: 2px solid #2b2525;
+}
+.img_avt{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*phan moi posted*/
+.Streamimg{
+    float: left;
+}
+.name_time{
+    float: left;
+}
+.streamdealine{
+    float: right;
+    color: red;
+    font-weight : bolder;
+}
+.streamthediv{
+    width: 100%;
+}
+.deadline{
+    margin-left: auto;
+    margin-right: 0;
+}
+ /*phan tim kiem*/
+.search{
+    margin: auto;
+}
+
+.thanhtimkiem{
+    float: left;
+    width: 70%;
+}
+.buttontimkiem{
+    float: left;
+    width: 30%;
+}
+.example{
+    margin: 40px;
+}
+.buttontimkiem button{
+    width: 100%;
+}
+
+.ttk{
+
+    width: 100%;
+    height: 2.4rem;
+    border: 1.5px solid #7f7f7f;
+    border-radius: 20px 0 0 20px;
+    border-right: none;
+}
+.ttk:hover{
+    border: 2px solid #5fa7ef;
+    background-color: #dce9f7;
+    border-right: none;
+    font-weight : 600;
+
+}
+.ttk:focus{
+    outline: none;
+    border: 2px solid #5fa7ef;
+    background-color: #dce9f7;
+    border-right: none;
+    font-weight : 600;
+}
+.bttk{
+    width: 100%;
+    height: 2.4rem;
+    background-color: #0074F0;
+    color: white;
+    border: none;
+    border-radius: 0 20px 20px 0;
+}
+.bttk:hover{
+    background-color: #499bed;
+}
+.bttk:focus{
+    outline: none;
+    background-color: #5fa7ef;
+}
+@media only screen and (max-width: 900px) {
+    .option{
+        width: 100%;
+    }
+    .search{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+.option option{
+    background-color: #f4f4f4;
+    font-size: 22px;
+
+}
+.option select:hover{
+    background-color: #f4f4f4;
+}
+.bg {
+    background: #eceb7b;
+}
+
+/*-------------*/
+.people_delete{
+    float: right;
+}
+
+.mnbtnDelete {
+    border: none;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    color: #1967D2;
+}
+
+.mnbtnDelete:hover {
+    border-radius: 50%;
+    background-color: #dfd9d9;
+}
+
+.mnbtnDelete:focus {
+    outline: none;
+}
+
+/*----*/
+
+.wave{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+.container-login{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap :7rem;
+    padding: 0 2rem;
+}
+
+.img-login{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.login-content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.img-login img{
+    width: 500px;
+}
+
+.form_login{
+    width: 360px;
+}
+
+.login-content img{
+    height: 100px;
+}
+
+.login-content h2{
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2.5rem;
+}
+
+.login-content h3{
+
+    margin-top: 15px;
+    color: #333;
+    font-size: 2.3rem;
+}
+
+.login-content .input-div{
+    position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.login-content .input-div.one{
+    margin-top: 0;
+}
+
+.i_login{
+    color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.i_login i{
+    transition: .3s;
+}
+
+.input-div > div{
+    position: relative;
+    height: 45px;
+}
+
+.input-div > div > h5{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.input-div:before, .input-div:after{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #38d39f;
+    transition: .4s;
+}
+
+.input-div:before{
+    right: 50%;
+}
+
+.input-div:after{
+    left: 50%;
+}
+
+.input-div.focus:before, .input-div.focus:after{
+    width: 50%;
+}
+
+.input-div.focus > div > h5{
+    top: -5px;
+    font-size: 15px;
+}
+
+.input-div.focus > .i_login > i{
+    color: #38d39f;
+}
+
+.input-div > div > input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0.5rem 0.7rem;
+    font-size: 1.2rem;
+    color: #555;
+    font-family: 'poppins', sans-serif;
+}
+
+.input-div.pass{
+    margin-bottom: 4px;
+}
+
+a.forgot_pwd {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #999;
+    font-size: 0.9rem;
+    transition: .3s;
+}
+
+a.forgot_pwd:hover {
+    color: #38d39f;
+}
+
+a.sign_up {
+    text-decoration: none;
+    color: #999;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+a.sign_up:hover {
+    color: #38d39f;
+}
+
+.btn_login{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+    background-size: 200%;
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: .5s;
+}
+.btn_login:hover{
+    background-position: right;
+}
+
+p.create_account {
+    margin: 2rem 0;
+    color: #999;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1050px){
+    .container-login{
+        grid-gap: 5rem;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .form_login{
+        width: 290px;
+    }
+
+    .login-content h2{
+        font-size: 1.9rem;
+        margin-bottom: 23px;
+    }
+
+    .login-content h3{
+        margin-top: 8px;
+        font-size: 1.7rem;
+    }
+
+    .img-login img{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .container-login{
+        grid-template-columns: 1fr;
+    }
+
+    .img-login{
+        display: none;
+    }
+
+    .wave{
+        display: none;
+    }
+
+    .login-content{
+        justify-content: center;
+    }
+}
+
+/*------------------*/
+
+/*new in enter code hoc vien*/
+* {
+    font-family: 'Roboto',Helvetica,Arial,sans-serif;
+    font-weight: 400;
+}
+
+.btn_join:link,
+.btn_join:visited {
+    float: right;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 8px 25px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn_join:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.btn_join:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #5882FA;
+    color: white;
+}
+
+.btn_join::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #5882FA;
+}
+
+.btn_join:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/*body login*/
+
+body #login_body {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*========*/
+.img_exam {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.4;
+    filter: grayscale(1);
+}
+
+/*----*/
